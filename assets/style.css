@@ -38,7 +38,7 @@ header nav ul li{
     display:inline-block;
     float:right;
     margin-left:25px;
-    
+
 
 }
 
@@ -49,6 +49,15 @@ section{
     background-color:var(--mg)
     color:var(-lrb)
 }
-.AboutMe {
+.AboutMe, .Work, .Contacts {
     display:flex;
+    flex-wrap:wrap;
+    width 25px;
+}
+
+
+
+}
+centerimage{
+    
 }
