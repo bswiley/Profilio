@@ -1,0 +1,44 @@
+:root{
+    --lp:#BFB8E5;
+    --mg:#5ED2A7;
+    --lrb:#3A599B;
+    --lstb:#5f83A7;
+    --db:#181E33;
+}
+
+*{
+    background-color: #BFB8E5;
+    font-family:'proxima_nova_rgregular',Arial,Verdana,sans-serif;
+}
+
+header{
+  background-color:var(--mg);
+    color:var(--db);
+}
+h1 {
+    background-color:var(--mg);
+    color:var(--db);
+}
+h1, h2, h3, h4 {
+color:var(--lrb);
+font:'proxima_nova_rgregular',Arial,Verdana,sans-serif;
+}
+
+main{
+    background-color:var(--mg);
+}
+p {
+    color:var(--db);
+    font-family:'Lato', sans-serif;
+    font-family: "brandon-grotesque",Arial,Helvetica,Geneva,sans-serif;
+    
+}
+
+main {
+
+}
+section{
+    background-color:var(--mg)
+    color:var(-lrb)
+
+}
