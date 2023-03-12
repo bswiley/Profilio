@@ -1,5 +1,5 @@
 :root{
-    --lp:#BFB8E5;
+    --lp:#edebf7;
     --mg:#5ED2A7;
     --lrb:#3A599B;
     --lstb:#5f83A7;
@@ -7,7 +7,7 @@
 }
 
 *{
-    background-color: #BFB8E5;
+    background-color:var(--lp);
     font-family:'proxima_nova_rgregular',Arial,Verdana,sans-serif;
 }
 
@@ -34,11 +34,21 @@ p {
     
 }
 
+header nav ul li{
+    display:inline-block;
+    float:right;
+    margin-left:25px;
+    
+
+}
+
 main {
 
 }
 section{
     background-color:var(--mg)
     color:var(-lrb)
-
+}
+.AboutMe {
+    display:flex;
 }
