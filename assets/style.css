@@ -14,6 +14,7 @@
 header{
   background-color:var(--mg);
     color:var(--db);
+    display: flex;
 }
 h1 {
     background-color:var(--mg);
@@ -30,34 +31,56 @@ main{
 p {
     color:var(--db);
     font-family:'Lato', sans-serif;
-    font-family: "brandon-grotesque",Arial,Helvetica,Geneva,sans-serif;
-    
+    font-family: "brandon-grotesque",Arial,Helvetica,Geneva,sans-serif;   
 }
-
 header nav ul li{
-    display:inline-block;
-    float:right;
-    margin-left:25px;
-
-
-}
-
-main {
-
-}
-section{
-    background-color:var(--mg)
-    color:var(-lrb)
-}
-.AboutMe, .Work, .Contacts {
     display:flex;
-    flex-wrap:wrap;
-    width 25px;
+    float:right;
+    margin-left:40px;
+    height: 50px;
+}
+
+.spacer {
+    height: 50px;
+}
+
+.complete {
+    display: flex;
+    background-color:var(--lp);
+    width: 100%;
+
+}
+.workimages1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.side {
+ width: 20%;
+
+}
+
+.wcontent, .acontent, .ccontent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
 
 
+ .card {
+    flex-direction: column;
+ }
+
+.centerimage{
+    height: 100%;
+    width: 100%;
 }
-centerimage{
-    
+#cimage{
+    Display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
