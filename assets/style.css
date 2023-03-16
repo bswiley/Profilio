@@ -3,19 +3,24 @@
     --mg:#5ED2A7;
     --lrb:#3A599B;
     --lstb:#5f83A7;
-    --db:#181E33;
+    --db:#2848bb;
     --font-basic: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
     --font-next:'proxima_nova_rgregular',Arial,Verdana,sans-serif
     --font-finally:"brandon-grotesque",Arial,Helvetica,Geneva,sans-serif
 }
+#spacer {
+    height: 100px;
+}
 
+ h1, h2, h3, h4 {
+    color: var(--db)
+}
 .complete {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row
     background-color:var(--lp);
     width: 100%;
-
 }
 .workimages1{
     display: flex;
@@ -24,10 +29,13 @@
 .side {
  width: 20%;
 }
-.acontent p {
+#text {
     padding: 50px;
+    font-family: var(--font-next)
 }
 #first h3 {
+    border-left: 20px;
+
 
 }
 span {
@@ -39,6 +47,43 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+figure img {
+    height:300px;
+    width: 225px;
+    border-radius:50%;
+    border: solid var(--db)
+}
+nav {
+    display:flex;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav ul li {
+    
+    float:left;
+    margin-left: 200px;
+   /* padding-left: 70px;
+    padding-right: 70px
+*/}
+
+a {
+    text-decoration: none;
+    color: var(--db);
+    padding:0 40px 0 40px
+}
+
+a:visited {
+    color: var(--db);
+}
+a:active {
+    color: purple;
+}
+a:hover {
+    color: var(--mg);
+} 
 .wcontent, .acontent, .ccontent{
     display: flex;
     flex-direction: row;
@@ -47,6 +92,11 @@ header {
     flex-wrap: wrap;
     width: 80%;
 }
+
+.card {
+    height:325px;
+    width: 400px;
+}   
 .card img{
     height: 300px;
     width: 400px;
@@ -57,7 +107,7 @@ header {
 }
 
  .card {
-    flex:1 0 200
+    flex:1 0 10
  }
 
  .card h3 {
@@ -72,7 +122,13 @@ header {
     flex:1 0 200px;
     border-style: solid;
     border-width: 3px;
-    padding: 20px:
+    padding:none;
+    border 1px solid var(--db)
+ }
+ .card h3{
+    border:1px solid var(--db); 
+    width: 300px;
+    justify-content: center;
  }
 .centerimage{
     height: 100%;
@@ -84,6 +140,7 @@ header {
     align-items:center;
 
 }
+
 .smallcards {
     display: flex;
     justify-content: space-between;
@@ -111,4 +168,12 @@ header {
     display:flex;
     flex-direction: column;
 }
+}
+footer {
+    display:flex
+}
+footer p {
+    justify-self: flex-end;
+    color:#181E33
+    
 }
