@@ -4,16 +4,21 @@
     --lrb:#3A599B;
     --lstb:#5f83A7;
     --db:#2848bb;
-    --font-basic: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
-    --font-next:'proxima_nova_rgregular',Arial,Verdana,sans-serif
-    --font-finally:"brandon-grotesque",Arial,Helvetica,Geneva,sans-serif
+    --font-basic: arial;
+    --font-next: serif;
+    --font-finally: sans-serif
 }
+* {
+    box-sizing: border-box;
+  }
+  
 #spacer {
     height: 100px;
 }
 
  h1, h2, h3, h4 {
     color: var(--db)
+    font-family: sans-serif;
 }
 .complete {
     display: flex;
@@ -27,7 +32,7 @@
     flex-wrap: wrap;
 }
 .side {
- width: 20%;
+ width: 10%;
 }
 #text {
     padding: 50px;
@@ -65,9 +70,9 @@ nav ul li {
     
     float:left;
     margin-left: 200px;
-   /* padding-left: 70px;
-    padding-right: 70px
-*/}
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
 
 a {
     text-decoration: none;
@@ -88,11 +93,17 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 80%;
 }
+.ccontent{
+    margin-left: 200px;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 
+}
 .card {
     height:325px;
     width: 400px;
@@ -107,28 +118,30 @@ a:hover {
 }
 
  .card {
-    flex:1 0 10
- }
-
- .card h3 {
-    flex: 1 0 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
     padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate (8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+     }
+
+ .card header {
+    flex: 1 0 200px;
+    padding: 0px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
  }
 
  .card image{
-    flex:1 0 200px;
-    border-style: solid;
-    border-width: 3px;
-    padding:none;
-    border 1px solid var(--db)
+    width: 100%
  }
- .card h3{
-    border:1px solid var(--db); 
-    width: 300px;
-    justify-content: center;
+ .card header{
+    border-radius: 50px 50px 0px 50px;
+    padding: 20px;
  }
 .centerimage{
     height: 100%;
@@ -142,10 +155,13 @@ a:hover {
 }
 
 .smallcards {
+    flex: 4;
+    backgroun-color:var(--lp);
+    padding: 50px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-
+    justify-content: space-evenly;
+    align-items: flex-start
 }
 @media screen and (max-width: 815px) {
     .complete {
