@@ -6,73 +6,83 @@
 </head>
 
 <body>
+    <!---Header--->
     <header>
         <div>
         <h1>Brian Wiley</h1>
         </div>
+    <!---Profile image--->
         <figure>
             <img src="./assets/images/profile.jpg" alt="Profile image">
         </figure>
-         <nav>
-            <ul>
-                <li>
-                    <a href="#AboutMe">About Me</a>
-                </li>
-                <li>
-                    <a href="#Work">Work</a>
-                </li>
-                <li>
-                    <a href="#Contacts">Contacts</a>
-                </li>
-            </ul>
+    <!---Navbar---> 
+        <nav>
+                <a href="#AboutMe">About Me</a>
+                <a href="#Work">Work</a>
+                <a href="#Contacts">Contacts</a>
         </nav>
     </header>
+    <!---Body--->
     <main>
-        <section class="spacer"></section>
+        <section id="spacer"></section>
+    <!---About Me Section--->
         <section class="complete">
+    <!----About Me Sidebar---->
             <div class="side" id="AboutMe"><h2>About Me</h2></div>   
+    <!---About Me Text------>
             <summary class="acontent">
-                <p id="text">Here is where I go on and on about myself, but since I am not quoting Cicero's <span>De finibus bonorum et malorum</span>, my text at this point won't last very long.  Not nearly as long as I would like it too.  Certainly, not nearly as long as it probably should be. Although, I should mention that the images below represent some of the projects "I have been working on" recently.  Starting with the first project which is a really big deal and moving on down to my fifth project which probably won't have as much impact.  Naturally, the current images don't themselves have any content because, at this stage all the projects are imaginary and my imagination is rather limited.  I didn't want to copy the images in the model because that would be plagerism and I also couldn't pull interesting, attention-getting images out of my . . . . well you know, even though had I been able to do so those images would most certainly be more interesting and inspiring.  I claim the same excuse for my profile/avatar picture.</p>
+                <p id="text">Here is where I go on and on about myself, but since I am not quoting Cicero's <span>De finibus bonorum et malorum</span>, my text at this point won't last very long.  Not nearly as long as I would like it too.  Certainly, not nearly as long as it probably should be. Although, I should mention that the images below represent some of the projects "I have been working on" recently.  Starting with the first project which is a really big deal and moving on down to my fifth project which probably won't have as much impact.  Naturally, the current images don't themselves have any content because, at this stage all the projects are imaginary and my imagination is rather limited.  I didn't want to copy the images in the model because that would be plagerism and I also couldn't pull interesting, attention-getting images out of my . . . . well you know. Had I been able to do so, those images would, most certainly be interesting and inspiring.  I claim the same excuse for my profile/avatar picture.</p>
             </summary>
+    <!----My Work----->
         </section>
         <section class="complete">
+    <!----Work Sidebar------>        
             <div class="side" id="Work"><h2>Work</h2></div>
             <div class="wcontent">
-                <div id="workimages1">
-                    <div class="card" id="first">
-                            <header>This first project</header>
-                            <a href=project1.html><img src="./assets/images/project1.jpg" alt="Image representing my first project"</a>
-                    </div>
-                    <div class="smallcards">
-                        <div class="card"> 
-                                <header>The second project</header>
-                                <a href=project2.html><img src="./assets/images/project2.jpg" alt="Image representing my second project" height="300px" width="400px"></a>
+                <div class="workcard">
+                        <div class="cardb" id="first">
+                            <a href=project1.html><header>This first project</header>
+                            <img src="./assets/images/project1.jpg" alt="Image representing my first project">
+                            <p>This project completed: April 4th, 2023</p>                      
+                            </a>
                         </div>
-                        <div class="card">
-                                <header>The Third project</header>
-                                <a href=project3.html><img src="./assets/images/project3.jpg" alt="Image representing my third project" height="300px" width="400px"></a>
+                        <div class="cards"> 
+                                <a href=project2.html><header>The second project</header>
+                                <img src="./assets/images/project2.jpg" alt="Image representing my second project" height="300px" width="400px">
+                                <p>This project completed: April 30th, 2023</p>
+                                </a>
                         </div>
-                        <div class="card">
-                                <header>The fourth project</header>
-                                <a href=project4.html><img src="./assets/images/project4.jpg" alt="Image representing my fourth project" height="300px" width="400px"></a>
+                        <div class="cards">
+                                <a href=project3.html><header>The Third project</header>
+                                <img src="./assets/images/project3.jpg" alt="Image representing my third project" height="300px" width="400px">
+                                <p>This project completed: May 15th, 2023</p>
+                                </a>
+                        </div>
+                        <div class="cards">
+                                <a href=project4.html><header>The fourth project</header>
+                                <img src="./assets/images/project4.jpg" alt="Image representing my fourth project" height="300px" width="400px">
+                                <p>This project completed: June 3rd, 2023</p>
+                                </a>
                         </div>  
-                        <div class="card">
-                            <header>The fifth project</header>  
-                            <a href=project5.html><img src="./assets/images/project5.jpg" alt="Image representing my fifth project" height="300px" width="400px"></a>
+                        <div class="cards">
+                            <a href=project5.html><header>The fifth project</header>  
+                            <img src="./assets/images/project5.jpg" alt="Image representing my fifth project" height="300px" width="400px">
+                            <p>This project completed: June 28th, 2023</p>
+                            </a>
                         </div>
                     </div>   
                 </div>
         </section>
-        <section class ="spacer" ></section>
+        <section id ="spacer" ></section>
         <section class="complete"> 
             <div class="side" id="Contacts"><h2>Contacts</h2></div>
             <div class="ccontent">
                 <a href="emmailto:bswiley@gmail.com">Send email</a>   
                 <a href="https://www.linkedin.com/in/wileybrian/">Linkedin</a>    
-
-                    </div>
+            </div>
             </div>
         </section>
+        <section id="spacer"></section>
         <footer>
             <p>© Brian Wiley</p>
         </footer>
