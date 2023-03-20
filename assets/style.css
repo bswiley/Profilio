@@ -1,3 +1,4 @@
+/* root and body over all */
 :root{
     --lp:#edebf7;
     --mg:#5ED2A7;
@@ -9,7 +10,7 @@
 .* {
     box-sizing: border-box;
   }
-body {
+  body {
     font-family: Arial, san-serif;
     margin: 5px;
     display: flex;
@@ -17,18 +18,18 @@ body {
     min-height:100vh;
     background-color:var(--lp);
 }
-
-  header {
+/*  header with my name, profile image, and navigation
+ links to parts of the page*/
+header {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-h1, h2, h3, h4 {
-    font-family: Arial, san-serif;
-    color: var(--db)
-
+figure img{
+    border-radius: 50%; 
+    border-width 1px;
+    border-color:var(--db);
 }
-
 nav {
     display:flex;
     margin-left:200px;
@@ -40,47 +41,70 @@ nav {
 nav a {
     text-decoration: none;
     color: var(--db);
-    padding:0 40px 0 40px
+    padding:0 40px 0 40px;
 }
-
-
-
-
-  .spacer {
+a:visited {
+    color: var(--db);
+}
+a:hover {
+    color: var(--mg);
+} 
+/* I put a "spacer" section between the parts so 
+they look distinct and make it seem the navigation
+ links are necessary */
+.spacer {
     height: 100px;
 }
+
+/* the complete class holds the side bar and 
+the main section of each of the three parts */
+.complete {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+/* about me section, sidebar and text.  
+The About Me should be on one line and 
+the text seperate from it */
+#AboutMe {
+ flex:1;
+ padding:10px;
+ text-align: left;
+ width: 170px;
+}
+#AboutMe h2{
+    width: 120px;
+}
+.acontent, {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.aconetent {
+    display:flex;
+    flex-wrap: nowrap;
+}
+    .text {
+ padding: 10px;
+ font-family: cursive;
+} 
 span {
     font-style: italic;
 }
-
-figure img{
-    border-radius: 50%; 
-    border-width 1px;
-    border-color:var(--db);
-}
-
-.complete {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: space-around;
-    width: 100%;
-}
-
-.side {
- width: 15%;
-}
-
-#AboutMe {
-    width: 100px;
-}
-#text {
-    padding: 50px;
-    font-family: var(--font-next)
-}
-#first {
-    padding: 20px;
-}
-
+/* Since the "Work" aside appears to teke care of itself
+I started to concentrate the cSS to the projects class.
+I had ot treat the first project (the 'bigproject" class)
+seperately from the others ("littleproject" class) since
+it is supposed to be obviously bigger.  But other than 
+their relative sizes, they are treated the same in the 
+container (i.e. the "projects" class. Also, I added the 
+":hover" pseudo class to both the cards and the headers 
+associated text so that they change when interacted with
+ */
  .projects{
     flex: 4;
     background-color:var(--lp);
@@ -89,47 +113,88 @@ figure img{
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: flex-start;
+    }    
+
+.bigproject {
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 500px;
+    transform: rotate(2deg);
+    box-shadow: 10px 10px 5px var(--lrb);
+    margin: 20px;
     }
-      
-      
+.bigproject:hover {
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 500px;
+    transform: rotate(10deg);
+    box-shadow: 20px 20px 10px var(--lrb);
+    margin: 20px;
+} 
 .littleproject {
-   /* border-style: solid;
-    border-width: 1px;
-    */border-radius: 50px;
+   /* Because I didn't feel the border styles were 
+   necessary on either the first project or the others
+   I removed the border style and width froom the model I
+   used */
+    border-radius: 50px;
     padding: 10px;
     flex: 0 0 300px;
-    transform: rotate(4deg);
+    transform: rotate(2deg);
     box-shadow: 10px 10px 5px var(--lrb);
     margin: 60px;
 }
-.bigproject {
-   /* border-style: solid;
-    border-width: 1px;
-    */border-radius: 50px;
+.littleproject:hover {
+    border-radius: 50px;
     padding: 10px;
-    flex: 0 0 500px;
-    transform: rotate(4deg);
-    box-shadow: 10px 10px 5px var(--lrb);
-    margin: 20px;
+    flex: 0 0 300px;
+    transform: rotate(10deg);
+    box-shadow: 20px 20px 10px var(--lrb);
+    margin: 60px;
 }
-      
-.littleproject header {
+.bigproject h3 {
+    text-decoration: none;
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
     color: var(--lp);
     background-color: var(--db);
 }
-.bigproject header {
+.bigproject h3:hover {
+    text-decoration: none;
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+    color: var(--mg);
+    background-color: var(--db);
+    text-decoration: none;
+}    
+.littleproject h3 {
     border-radius: 50px 50px 0px 0px;
     padding: 20px;
     color: var(--lp);
     background-color: var(--db);
+    text-decoration: none;
+}
+.littleproject h3:hover {
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px;
+    color: var(--mg);
+    background-color: var(--db);
+    text-decoration: none;
 }
 .bigproject p {
     text-align: flex-start;
     border-radius: 0px 0px 50px 50px;
     padding: 20px 20px 10px 0px;
     color: var(--mg);
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.bigproject p:hover {
+    text-align: flex-start;
+    border-radius: 0px 0px 50px 50px;
+    padding: 20px 20px 10px 0px;
+    color: var(--db);
     font-family: arial, sans-serif;
     font-size: 15px;
     font-weight: bold;
@@ -145,39 +210,23 @@ figure img{
     font-weight: bold;
     text-decoration: none;
 }
+.littleproject p:hover {
+    text-align: flex-start;
+    border-radius: 0px 0px 50px 50px;
+    padding: 20px 20px 10px 0px;
+    color:var(--db);
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
 .bigproject img {
     width: 100%;
-    background-color: var(--db);
 }
 .littleproject img {
     width: 100%;
 }
-
-
-
-
-a:visited {
-    color: var(--db);
-}
-a:active {
-    color: purple;
-}
-a:hover {
-    color: var(--mg);
-} 
-.acontent, {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 80%;
-}
-
-.aconetent {
-    display:flex;
-    flex-wrap: nowrap;
-}
+/* This structures the "Contacts" section*/
 
 .ccontent{
     display: flex;
@@ -185,7 +234,6 @@ a:hover {
     justify-content: flex-end;
     align-items: flex-end;
 }
-
 .ccontent a {
     font-family: arial, sans-serif;
     font-size: 15px;
@@ -193,27 +241,18 @@ a:hover {
     padding: 10px;
     text-decoration: none;
 }
+/* Footer */
 
-.wcontent{
-    flex: 4;
-    background-color: #fff;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-
-.card img{
-    height: 300px;
-    width: 400px;
-    }
-    
-#first img{
-    height: 300px;
-    width: 600px;
+footer {
+    display:flex
+    justify-content: flex-end;
 }
-
-
+footer p {
+    justify-self: flex-end;
+    color:#181E33 
+}
+/* This adjusts the site to flex from row to column when
+viewed on a tablet or phone */
 @media screen and (max-width: 815px) {
     .complete {
       display: flex;
@@ -223,7 +262,7 @@ a:hover {
         height: 225px;
         width: 300px;
     }
-    #first img {
+    .bigproject img {
         height: 225px;
         width: 450px;}
     .complete {
@@ -232,12 +271,4 @@ a:hover {
     align-content: center;    
 }
 
-}
-footer {
-    display:flex
-}
-footer p {
-    justify-self: flex-end;
-    color:#181E33
-    
 }
