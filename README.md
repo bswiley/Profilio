@@ -8,14 +8,14 @@ Update: I recently finished Challenge 3 and have used an image from that page as
 
 The final section is my "contact" section, where I have email links, a link to my github, and a link to LinkedIn."  Unlike the mock-up, there aren't many other ways in which I can be contacted.  I don't know how phone number links work, and I also don't have any real social media accounts outside of LinkedIn and GitHub (for the course).
 
-##Installation
+## Installation
 This page was deployed directly to https://bswiley.github.io/Challenge2/ after the work was completed.  In Github, the index.html is at the same level as this README.md file.
 
 Concerning "unique" I assume my ability to use Github is being tested and what is wanted is that I can download the files from a repository and then repost them to my own, "unique" repository that I have named myself, that is supstatively different than the original repository.  I say this because on the first Challenge I went with "Challenge1" and with this one I went with "Challenge2".  Strictly speaking, that's not very "unique" (i.e. not creative), but if I undestand the context correctly, while "Challenge2" is not 'unique' when compared to "Challenge1," it is definitly unique in that it is not named "friendly-parakeet."
 
  On the first asignment I believe I got a "pass" despite not linking my image correctly to the read me.  The text explaining this is not itself, perfectly clear to me, so I still am not completely sure on how to do this. But, I will give it a try with[screencapture](./screencapture.png).
 
-License
+## License
 Other than it having information that is linked directly to me, I am not concerned with it being copied. Therefore I went with what I think is the "most opensource" license.  I understand that to be the MIT license.  I don't care if the website is copied so much as want to be able to continue to use it myself, even though I will probably build another one for an actual, future porfolio. 
 
 Here I will also mention that I borrowed heavily from the "10-Stu-box-styling" which was part of the "02_advanced-css" class work from the "UOFW-VIRT-FSF-PT-02-2023-U-LOLC" repository.  After using it, I found that I still couldn't get it to work well with my website, especially since the parts of concern are embedded more deeply inside my websight than the original was (since it represented the "complete" website save some text around it).  I like to believe I have altered it enough to "make it mine" and therefore, though I used a lot of the ideas, it was not really so much an operation of "cut and paste" of that material into my work as much as it was making those ideas work in my site and contiually tweeking it to make it still work.  Doing this was actually more difficult than it might seem because, often, things would "magically" become undone or not work and I had to start over, looking at the model to see what I'd done wrong. Getting "cards" to work became more a "goal" I was aiming towards than a foundation that the page was built around.   I don't know how to measure the degree to which the code has changed from that context to my own page, but I like to think it changed quite a bit in my efforts to make it (as well as all the other ideas fron the class) fit into my own project. 
