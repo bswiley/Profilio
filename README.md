@@ -9,7 +9,7 @@ Update: I recently finished Challenge 3 and have used an image from that page as
 The final section is my "contact" section, where I have email links, a link to my github, and a link to LinkedIn."  Unlike the mock-up, there aren't many other ways in which I can be contacted.  I don't know how phone number links work, and I also don't have any real social media accounts outside of LinkedIn and GitHub (for the course).
 
 ## Installation
-This page was deployed directly to https://bswiley.github.io/Challenge2/ after the work was completed.  In Github, the index.html is at the same level as this README.md file.
+This page was deployed directly to https://bswiley.github.io/Profilio/ after the work was completed.  In Github, the index.html is at the same level as this README.md file.
 
 Concerning "unique" I assume my ability to use Github is being tested and what is wanted is that I can download the files from a repository and then repost them to my own, "unique" repository that I have named myself, that is supstatively different than the original repository.  I say this because on the first Challenge I went with "Challenge1" and with this one I went with "Challenge2".  Strictly speaking, that's not very "unique" (i.e. not creative), but if I undestand the context correctly, while "Challenge2" is not 'unique' when compared to "Challenge1," it is definitly unique in that it is not named "friendly-parakeet."
 
